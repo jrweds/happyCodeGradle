@@ -13,8 +13,10 @@ dependencies {
     testImplementation(kotlin("test"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
 
-    // Dependencia para JavaMail
-    implementation("com.sun.mail:javax.mail:1.6.2") // Agregamos JavaMail aquí
+    //dependencia JavaMail
+    implementation("com.sun.mail:javax.mail:1.6.2")
+    //biblioteca JNativeHook
+    implementation ("com.github.kwhat:jnativehook:2.2.2")
 }
 
 tasks.test {
