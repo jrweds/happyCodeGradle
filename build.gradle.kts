@@ -7,6 +7,8 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    maven ( "https://oss.sonatype.org/content/repositories/snapshots/" )
+
 }
 
 dependencies {
@@ -17,6 +19,7 @@ dependencies {
     implementation("com.sun.mail:javax.mail:1.6.2")
     //biblioteca JNativeHook
     implementation ("com.github.kwhat:jnativehook:2.2.2")
+
 }
 
 tasks.test {

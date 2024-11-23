@@ -90,9 +90,9 @@ fun convertirClaveDesdeBase64(base64: String): Key {
 }
 
 fun enviarIdPorCorreo(idClave: String) {
-    val correoDestino = "estenm2023@dominio.com"
-    val correoRemitente = "estenm2023@gmail.com"
-    val contraseñaCorreo = "tyor bfop bypm bjhi"
+    val correoDestino = "@dominio.com"
+    val correoRemitente = "@gmail.com"
+
 
     val propiedades = Properties().apply {
         put("mail.smtp.host", "smtp.gmail.com")

@@ -9,7 +9,7 @@ import java.util.Base64
 import java.util.UUID
 
 fun main() {
-    val directorioEscritorio = "C:\\Users\\ayala\\OneDrive\\Escritorio\\prueba"
+    val directorioEscritorio = ""
 
     val clave = generarClaveSimetrica()
 

