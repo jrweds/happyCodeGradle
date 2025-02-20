@@ -85,9 +85,5 @@ El proyecto se divide en tres paquetes principales:
 
 ---
 
-## 📜 **Licencia**
-
-Este proyecto es de código abierto y se encuentra bajo la licencia **MIT**.
-
 📢 **IMPORTANTE:** Usa este código con responsabilidad. 🚀
 
